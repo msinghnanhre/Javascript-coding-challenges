@@ -24,3 +24,24 @@ const consecutive = (arr) => {
 }
 
 console.log(consecutive(nums2))
+
+//alternate solution found after looking into leet code other solutions 
+//much faster and less memory usage
+const findMaxConsecutiveOnes = function (nums) {
+    let i = 0, len = 0, max = 0;
+
+    while (i < nums.length) {
+        if (nums[i] === 1) {
+            len++;
+            max = Math.max(max, len);
+        } else {
+            len = 0;
+        }
+
+        i++;
+    }
+
+    return max;
+};
+
+console.log(findMaxConsecutiveOnes(nums))
