@@ -4,7 +4,6 @@
 //Explanation: The first two digits or the last three digits are consecutive 1s.The maximum number of consecutive 1s is 3.
 
 let nums = [1, 1, 1, 1, 0, 1, 1, 1]
-
 let nums2 = [1, 1, 1, 1, 0, 1, 1, 1, 1, 1]
 
 const consecutive = (arr) => {
@@ -28,8 +27,8 @@ console.log(consecutive(nums2))
 //alternate solution found after looking into leet code other solutions 
 //much faster and less memory usage
 const findMaxConsecutiveOnes = function (nums) {
-    let i = 0, len = 0, max = 0;
 
+    let i = 0, len = 0, max = 0;
     while (i < nums.length) {
         if (nums[i] === 1) {
             len++;
@@ -37,10 +36,8 @@ const findMaxConsecutiveOnes = function (nums) {
         } else {
             len = 0;
         }
-
         i++;
     }
-
     return max;
 };
 

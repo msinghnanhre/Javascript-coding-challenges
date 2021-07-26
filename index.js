@@ -1,2 +1,2 @@
-console.log("First challenge")
+console.log("Coding challenge")
 
