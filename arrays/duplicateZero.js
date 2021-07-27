@@ -11,7 +11,6 @@
 const input = [0, 1, 7, 6, 0, 2, 0, 7]
 
 const duplicate = (arr) => {
-    let initialLength = arr.length;
     let zeroInd = []
     arr.forEach((item, index) => {
         if (item === 0) {
