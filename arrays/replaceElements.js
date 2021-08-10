@@ -5,7 +5,7 @@ let arr = [17, 18, 5, 4, 6, 1]
 
 const replace = (arr) => {
    return arr.map((item, index) => {
-        if (index === arr.length-1) {
+        if (index === arr.length-1){
             item = -1
         }
         else {

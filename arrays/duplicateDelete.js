@@ -15,7 +15,11 @@ const deleteDuplicates = (nums) => {
 }
 
 console.log(deleteDuplicates(nums))
-// nums.splice(2, 2)
-// console.log(nums)
+// // nums.splice(2, 2)
+// //console.log(nums.lastIndexOf(1))
 
-//console.log(nums.lastIndexOf(1))
+
+
+
+
+
