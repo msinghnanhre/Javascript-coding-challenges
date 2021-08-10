@@ -1,5 +1,5 @@
 //Process where one class acquires properties from another class
-
+//This example shows how inheritance works in Js classes
 class Car{
 
     setName(name) {
