@@ -7,7 +7,6 @@ let nums = [3, 2, 2, 3]
 let val = 3
 
 const removeElements = (nums, val) => {
-    let i = 0
     while (nums.includes(val)) {
         nums.splice(nums.indexOf(val), 1)
     }
