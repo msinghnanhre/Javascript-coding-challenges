@@ -33,6 +33,19 @@ var twoSum = function (nums, target) {
         }
     }
     return indexes
+
+    // var twoSum = function (nums, target) {
+    //     let map = {};
+    //     for (let i = 0; i < nums.length; i++) {
+    //         const num = nums[i];
+    //         const diff = target - num;
+    //         if (map[diff] != undefined) {
+    //             return [map[diff], i];
+    //         } else {
+    //             map[num] = i;
+    //         }
+    //     }
+    // };
 };
 
 console.log(twoSum(nums, target))
