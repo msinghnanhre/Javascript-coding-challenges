@@ -83,7 +83,7 @@ class LinkedList{
     //remove at index
 
     removeAt(index) {
-        if (index > 0 && index > this.size) {
+        if (index >= this.size || index < 0) {
             return;
         }
         let current = this.head;
@@ -128,5 +128,14 @@ linked_list.addNodeAtHead(7)
 linked_list.addNodeAtEnd(6)
 linked_list.insertAt(2, 1)
 //linked_list.getValue(0)
-linked_list.removeAt(1)
+linked_list.removeAt(-1)
 linked_list.printList()
+
+// const x = {
+//     name: 'nick',
+//     id: 'jake',
+//     status: 7,
+// }
+
+// console.log(Object.fromEntries(Object.entries(x)))
+// console.log(x)
