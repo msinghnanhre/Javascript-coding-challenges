@@ -131,11 +131,129 @@ linked_list.insertAt(2, 1)
 linked_list.removeAt(-1)
 linked_list.printList()
 
-// const x = {
-//     name: 'nick',
-//     id: 'jake',
-//     status: 7,
+/**
+ * Initialize your data structure here.
+ */
+
+// function ListNode(val) {
+//     this.val = val;
+//     this.next = null;
 // }
 
-// console.log(Object.fromEntries(Object.entries(x)))
-// console.log(x)
+// var MyLinkedList = function () {
+//     this.head = null;
+// };
+
+// /**
+//  * Get the value of the index-th node in the linked list. If the index is invalid, return -1. 
+//  * @param {number} index
+//  * @return {number}
+//  */
+// MyLinkedList.prototype.get = function (index) {
+//     if (index === 0) {
+//         return this.head ? this.head.val : -1;
+//     }
+
+//     let cur = this.head;
+//     let i = 0;
+
+//     while (i < index && cur !== null) {
+//         i++;
+//         cur = cur.next;
+//     }
+
+//     return cur ? cur.val : -1;
+// };
+
+// /**
+//  * Add a node of value val before the first element of the linked list. After the insertion, the new node will be the first node of the linked list. 
+//  * @param {number} val
+//  * @return {void}
+//  */
+// MyLinkedList.prototype.addAtHead = function (val) {
+//     const newNode = new ListNode(val);
+//     newNode.next = this.head;
+//     this.head = newNode;
+// };
+
+// /**
+//  * Append a node of value val to the last element of the linked list. 
+//  * @param {number} val
+//  * @return {void}
+//  */
+// MyLinkedList.prototype.addAtTail = function (val) {
+//     const newNode = new ListNode(val);
+
+//     if (this.head === null) {
+//         this.head = newNode;
+//         return;
+//     }
+
+//     let cur = this.head;
+//     while (cur.next !== null) {
+//         cur = cur.next;
+//     }
+//     cur.next = newNode;
+// };
+
+// /**
+//  * Add a node of value val before the index-th node in the linked list. If index equals to the length of linked list, the node will be appended to the end of linked list. If index is greater than the length, the node will not be inserted. 
+//  * @param {number} index 
+//  * @param {number} val
+//  * @return {void}
+//  */
+// MyLinkedList.prototype.addAtIndex = function (index, val) {
+//     let newNode = new ListNode(val);
+
+//     if (index === 0) {
+//         newNode.next = this.head;
+//         this.head = newNode;
+//         return;
+//     }
+
+//     let i = 0;
+//     let cur = this.head;
+
+//     while (i < index - 1) {
+//         i++;
+//         cur = cur ? cur.next : null;
+//     }
+
+//     if (cur) {
+//         newNode.next = cur.next;
+//         cur.next = newNode;
+//     }
+// };
+
+// /**
+//  * Delete the index-th node in the linked list, if the index is valid. 
+//  * @param {number} index
+//  * @return {void}
+//  */
+// MyLinkedList.prototype.deleteAtIndex = function (index) {
+//     if (index === 0) {
+//         this.head = this.head.next;
+//     }
+
+//     let cur = this.head;
+//     let i = 0;
+
+//     while (i < index - 1 && cur !== null) {
+//         i++;
+//         cur = cur.next;
+//     }
+
+//     if (cur && cur.next) {
+//         cur.next = cur.next.next;
+//     }
+// };
+
+// /**
+//  * Your MyLinkedList object will be instantiated and called as such:
+//  * var obj = new MyLinkedList()
+//  * var param_1 = obj.get(index)
+//  * obj.addAtHead(val)
+//  * obj.addAtTail(val)
+//  * obj.addAtIndex(index,val)
+//  * obj.deleteAtIndex(index)
+//  */
