@@ -25,4 +25,5 @@ const thirdMax = (nums) => {
     return result
 }
 
+
 console.log(thirdMax(nums))

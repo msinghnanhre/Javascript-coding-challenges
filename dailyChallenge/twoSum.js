@@ -11,18 +11,6 @@ let target = 9
 
 
 var twoSum = function (nums, target) {
-    // let numIndex = Math.floor(Math.random() * nums.length)
-    // let index1;
-    // let index2;
-
-    // nums.map((item, index) => {
-    //     if (item + nums[numIndex] === target && index !== numIndex){
-    //         index1 = index
-    //         index2 = numIndex
-    //     }
-    //     return [index1, index2]
-    // })
-    // return [index1, index2]
     let indexes = []
     for (let i = 0; i < nums.length; i++) {
         for (let j = 0; j < nums.length; j++) {
@@ -48,8 +36,4 @@ var twoSum = function (nums, target) {
     // };
 };
 
-// console.log(twoSum(nums, target))
-
-const foo = [1, 2, 3]
-const [n] = foo
-console.log(n)
+console.log(twoSum(nums, target))
